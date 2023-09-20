@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Govind - Developer portfolio</title>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Monomaniac+One&family=Open+Sans:ital,wght@1,300&family=Poppins:wght@300;400&display=swap
+    rel="stylesheet">
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        background-color: rgb(3, 3, 82);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(47, 47, 95);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul li a:hover {
+        text-decoration: none;
+        color: rgb(126, 126, 204);
+      }
+
+      
+
+      .left {
+        font-size: 20px;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 120px 0px;
+        align-items: center;
+      }
+      .about{
+        margin-left: 150px;
+      }
+
+      .firstSection > div {
+        width: 30%;
+      }
+
+      .leftSection {
+        font-size: 2rem;
+      }
+
+      .rightSection img {
+        width: 80%;
+        margin: 58px;
+        border-radius: 50%;
+      }
+
+      .leftSection .btn {
+        padding: 12px;
+        background-color: #1e2167;
+        color: white;
+        border: 2px solid white;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 20px;
+      }
+      .leftSection .button {
+        padding: 23px;
+      }
+      .purple {
+        color: blueviolet;
+      }
+      .text-gray {
+        color: gray;
+      }
+      #element {
+        color: blueviolet;
+      }
+
+      .secondSection {
+        max-width: 80vw;
+        margin: 0 auto;
+        height: 80vh;
+        align-items: center;
+      }
+
+      .secondSection .box {
+        background-color: white;
+        width: 1100px;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+        justify-content: space-around;
+        /* align-items: center; */
+      }
+      .box {
+        width: 100vw;
+      }
+      .secondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 100px;
+      }
+     
+
+      main hr {
+        border: 0px;
+        height: 1.2px;
+        margin: 40px 84px;
+        background: #9c97f1;
+      }
+
+      .secondSection h1 {
+        font-size: 1.9rem;
+      }
+      .about h1{
+        font-size: 1.9rem;
+      }
+      .image-top {
+        width: 43px;
+        height: 40px;
+        position: relative;
+        top: -40px;
+        left: -20px;
+      }
+
+      .vertical-title {
+        position: relative;
+        top: 75px;
+        width: 300px;
+      }
+      .vertical-desc {
+        width: 450px;
+      }
+
+      .thirdsection {
+        max-width: 80vw;
+        margin: 0 auto;
+        height: 60vh;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .thirdsection .box {
+        background-color: white;
+        width: 1300px;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+        justify-content: space-around;
+        /* align-items: center; */
+      }
+      .thirdsection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 100px;
+      }
+
+      .fourthsection {
+        max-width: 80vw;
+        margin: 0 auto;
+        height: 60vh;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .fourthsection .box {
+        background-color: white;
+        width: 1300px;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+        justify-content: space-around;
+        /* align-items: center; */
+      }
+      .fourthsection .vertical {
+        height: 73px;
+        width: 1px;
+        background-color: white;
+        margin: 0 100px;
+      }
+
+      footer {
+        background-color: #0e0e1a;
+        /* height: 233px; */
+        /* justify-content: space-evenly; */
+      }
+      .footer {
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+      }
+
+      .footer ul {
+        list-style: none;
+      }
+
+      .footer > div {
+        width: 223px;
+      }
+
+      .footer-rights {
+        text-align: center;
+        color: gray;
+        padding: 12px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Govind's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./Contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My Name is <span class="purple">Govind</span>
+          <div>and I am a passionate</div>
+          <span id="element"></span>
+          <div class="button">
+            <button class="btn">Download Resume</button>
+            <button class="btn">GitHub</button>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="./Photo.pdf-removebg-preview (1).jpg" alt="" />
+        </div>
+      </section>
+      <hr />
+      <div class="about">
+        <h1>About</h1>
+        <p>
+          Self-motivated and results-oriented full stack developer with expertise
+          in Java software development with 1 year of experience in a reputable
+          organisation utilising the skills and knowledge possessed for
+          organisational and self-improvement.
+        </p>
+      </div>
+      <hr>
+      <section class="secondSection">
+        <span class="text-gray">What I have done so far</span>
+        <h1>Work Experience</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="./software developer.png" alt="" />
+            <div class="vertical-title">
+              Web Solutions Specialist (july-2022 to Jan-2023)
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <div class="vertical-desc">
+              <ul>
+                <li>
+                  Troubleshooting, resolving all technical issues related to our
+                  software and the range of products and services it provisions
+                </li>
+                <li>
+                  Interacting with clients via. live chat, web based systems,
+                  online forums and telephone to resolve their problems and
+                  gather feedback
+                </li>
+                <li>
+                  Testing & analysis of all products & services. Identifying any
+                  bugs/issues in the system and assisting in their resolution
+                </li>
+                <li>Recording, tracking and reporting problem activity</li>
+                <li>
+                  Building strategies to improve efficiency, profitability and
+                  quality of service
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="./software developer.png" alt="" />
+            <div class="vertical-title">
+              Software Developer Intern (july-2021 to Dec-2021)
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <div class="vertical-desc">
+              <ul>
+                <li>
+                  Designed and developed a robust RESTful API using SpringMvc.
+                </li>
+                <li>
+                  Utilised Hibernate to create and manage the underlying
+                  database schema ensuring efficient data storage and retrieval.
+                </li>
+                <li>
+                  collaborated with cross-functional teams to gather and analyse
+                  project requirements
+                </li>
+                <li>Provided ongoing support and maintenance</li>
+                <li>Successfully delivered the project on time</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section class="thirdsection">
+        <h1>Technical Skills</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="./html.png" alt="" />
+            <div class="vertical-title">
+              HTML
+              <ul>
+                <li>Web Structuring</li>
+                <li>Form</li>
+                <li>Table</li>
+                <li>Dropdowm Lists</li>
+                <li>Advanced HTML</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img class="image-top" src="./css.png" alt="" />
+            <div class="vertical-title">
+              CSS
+              <ul>
+                <li>Web page Coloring</li>
+                <li>Selectors</li>
+                <li>Elements</li>
+                <li>Flex</li>
+                <li>Grid</li>
+              </ul>
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="./javascript.png" alt="" />
+            <div class="vertical-title">
+              JavaScript
+              <ul>
+                <li>Array object and Array methods</li>
+                <li>BOM& DOM Mode</li>
+                <li>Event Listener</li>
+                <li>String Object and Methods</li>
+                <li>Window Object</li>
+              </ul>
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="./sql.png" alt="" />
+            <div class="vertical-title">
+              SQL
+              <ul>
+                <li>Operators</li>
+                <li>Functions</li>
+                <li>Sub Query</li>
+                <li>Joins</li>
+                <li>Normalization</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="fourthsection">
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="./java.png" alt="" />
+            <div class="vertical-title">
+              CoreJava
+              <ul>
+                <li>Statement: Looping</li>
+                <li>Decision Making</li>
+                <li>Static and Non-Static</li>
+                <li>OOPs</li>
+                <li>Exception handling</li>
+                <li>Collection Framework</li>
+                <li>MultiThreading</li>
+                <li>Java Tools: Edit +, Eclipse</li>
+              </ul>
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="./J2EE.png" alt="" />
+            <div class="vertical-title">
+              J2EE(Advance Java)
+              <ul>
+                <li>Design Patterns</li>
+                <li>JDBC</li>
+                <li>Hibernate</li>
+                <li>Servlets/JSP</li>
+                <li>Spring Core</li>
+                <li>Spring Mvc</li>
+                <li>Spring Rest</li>
+                <li>Spring Boot</li>
+              </ul>
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="./React.png" alt="" />
+            <div class="vertical-title">
+              React JS
+              <ul>
+                <li>JSX/Virtual Dom</li>
+                <li>Component Based architecture</li>
+                <li>Props and States</li>
+                <li>Class based component</li>
+                <li>Funcation based component</li>
+                <li>Conditional Rendering</li>
+                <li>Hooks</li>
+                <li>Context API</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Govind's Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-rights">
+        copyright &#169;govindsportfolio.com | All Rights Reserveed
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Software Engineer", "Front End Developer !!!"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
